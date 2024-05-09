@@ -13,10 +13,10 @@ names = names[indices]
 min_times = min_times[indices]
 
 print("| Framework | Min Time [µs] | Median [µs] | Max [µs] |")
-print("| --- | --- | --- |")
+print("| --- | --- | --- | --- |")
 for name in names[::-1]:
     times = results[name]
-    print(f"| {name} | {min(times)} | {np.median(times):.3f} | {max(times)} |")
+    print(f"| [{name}](https://github.com/99991/matvec-gpu/blob/main/{name}) | {min(times):.3f} | {np.median(times):.3f} | {max(times):.3f} |")
 
 # Plot min times for each framework
 plt.figure(figsize=(10, 5))
