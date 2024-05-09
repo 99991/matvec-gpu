@@ -1,4 +1,6 @@
-# Byte-compiled / optimized / DLL files
+# compiled / optimized / DLL files
+cuda_matvec
+opencl_matvec
 __pycache__/
 *.py[cod]
 *$py.class
