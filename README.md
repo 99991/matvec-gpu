@@ -45,3 +45,14 @@ Note that the "Max [µs]" column usually shows the time of the first run, includ
 * Taichi and Numba (both with LLVM/CUDA backend) are roughly equally fast.
 * The running time with Taichi's Vulkan backend varies greatly.
 * Other Taichi GPU backends are quite slow, which is unfortunate, since they support a larger number of platforms.
+
+# Running
+
+To run the benchmark:
+
+* Install [Taichi](https://docs.taichi-lang.org/docs/dev_install)
+* Install [CuPy](https://docs.cupy.dev/en/stable/install.html)
+* Install  [Numba](https://numba.pydata.org/numba-doc/latest/user/installing.html) and
+* Run `benchmark.py`, which will run all the individual benchmarks and create the file `data/results.json`
+* Run `plot_results.py`, which will create the file `min_time.png` and plot the bar graph seen above.
+* Alternatively, run the `*_matvec.py` files individually.
